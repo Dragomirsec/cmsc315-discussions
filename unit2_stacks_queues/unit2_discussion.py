@@ -141,69 +141,69 @@ def main():
 
 
 print("\n=== STACK DEMO ===")
-print("TODO: Create a Stack object, demonstrate LIFO behavior,")
+print("TODO: Create a Stack object, demonstrate LIFO behavior, senerio: dishses,")
 
 
 # Creates a stack object named cool stack 
-coolstack = Stack()
+dishstack = Stack()
 
 # Added four values the the stack object cool stack 
-coolstack.push(10)
-coolstack.push(11)
-coolstack.push(12)
-coolstack.push(13)
+dishstack.push("dish1")
+dishstack.push("dish2")
+dishstack.push("dish3")
+dishstack.push("dish4")
 
 # Printing out an explenation of the stack
-top_coolstack = coolstack.stack[1]
-bottom_coolstack = coolstack.stack[0]
-print("Created the stack object and pused four values to the stack")
-print(f"The values in the stack are {coolstack.stack}, where {top_coolstack} is the top and {bottom_coolstack} is the bottom.")
+top_dishstack = dishstack.stack[-1]
+bottom_dishstack = dishstack.stack[0]
+print("Created the dish stack object and added four dishes to the stack")
+print(f"The dishes in the stack are {dishstack.stack}, where {top_dishstack} is the top dish and {bottom_dishstack} is the bottom dish.")
 print("Now we will pop all the values and see what happens when we pop when the stack is empty")
 # first time poping the top value and printing the stack
-coolstack.pop()
+dishstack.pop()
 
-print(coolstack.stack)
+print(dishstack.stack)
 
 # Second time poping the top value and printing the stack
-coolstack.pop()
+dishstack.pop()
 
-print(coolstack.stack)
+print(dishstack.stack)
 
 # Third time poping the top value and printing the stack
-coolstack.pop()
+dishstack.pop()
 
-print(coolstack.stack)
+print(dishstack.stack)
 
 # Fourth time poping the top value and printing the stack
-coolstack.pop()
+dishstack.pop()
 
-print(coolstack.stack)
+print(dishstack.stack)
 
 #poping the empty stack 
-coolstack.pop()
+dishstack.pop()
 
-print("\n now we will try to peek at the emptystack and see the output:")
+print("\n now we will try to look at the name of the top dish when the stack is empty!")
 #peeking the empty stack. WIll print out that the stack is empty 
-coolstack.peek()
+dishstack.peek()
 
 
-print("Now we will test if a single-item stack becomes empty after removal.")
+print("Now we will test if a single- dish stack becomes empty after removing a dish.")
 # Creating the stsck obejct
-newstack = Stack()
+newdishstack = Stack()
 
 # adding the value of 102 to the stack 
-newstack.push(102)
+newdishstack.push("cooldish")
 
 # Removing 102 from the stack
-print(newstack.stack)
-newstack.pop()
+print(newdishstack.stack)
+newdishstack.pop()
 
 #
 
 # print a ture or false statemnt if the list is empty 
-value1 = newstack.is_empty()
+value1 = newdishstack.is_empty()
 
-print(f"Is the single-item stack empty after removel:{value1}")
+print(f"Is the single-item dish stack empty after removel:{value1}")
 
 
 
@@ -223,54 +223,54 @@ print(f"Is the single-item stack empty after removel:{value1}")
 #    and verify the queue is empty afterward.
 
 print("\n=== QUEUE DEMO ===")
-print("Create a Queue object, demonstrate FIFO behavior,")
+print("Create a Queue object, demonstrate FIFO behavior, senerio:Register line")
 
 #Creating a queue object
-coolqueue = Queue()
+Registerqueue = Queue()
 
-# adding four values to the coolqueue
-coolqueue.enqueue(101)
-coolqueue.enqueue(102)
-coolqueue.enqueue(103)
-coolqueue.enqueue(104)
+# adding four values to the Registerqueue
+Registerqueue.enqueue("henry")
+Registerqueue.enqueue("tony")
+Registerqueue.enqueue("bob")
+Registerqueue.enqueue("alice")
 
-head = coolqueue.queue[0]
-bottom = coolqueue.queue[-1]
-print("Created the queue object and enqueued four values to queue")
-print(f"The values in the queue are {coolqueue.queue}, where {head} is the top and {bottom} is the bottom.\n")
-print("Now we will dequeue all the values and see what happens when we dequeue when the stack is empty")
+head = Registerqueue.queue[0]
+bottom = Registerqueue.queue[-1]
+print("Created the regester queue object and enqueued four people to queue")
+print(f"The pepole in the queue are {Registerqueue.queue}, where {head} is the first in line and {bottom} is the last in line.\n")
+print("Now we will remove all the people and see what happens when the queue is empty")
 
 #first time dequeueing and printing out the queue 
-coolqueue.dequeue()
-print(coolqueue.queue)
+Registerqueue.dequeue()
+print(Registerqueue.queue)
 
 #Second time dequeueing and printing out the queue 
-coolqueue.dequeue()
-print(coolqueue.queue)
+Registerqueue.dequeue()
+print(Registerqueue.queue)
 
 #Third time dequeueing and printing out the queue 
-coolqueue.dequeue()
-print(coolqueue.queue)
+Registerqueue.dequeue()
+print(Registerqueue.queue)
 
 #Fourth time dequeueing and printing out the queue 
-coolqueue.dequeue()
-print(coolqueue.queue)
+Registerqueue.dequeue()
+print(Registerqueue.queue)
 
 #deqeueing an empty queue
-coolqueue.dequeue()
+Registerqueue.dequeue()
 
-print("\n now we will try looking at the front of an empty queue:")
+print("\n now we will try looking at the front of the empty regsister queue:")
 
 # tring to queue an empty queue
-coolqueue.front()
+Registerqueue.front()
 
-print("Now we will test if a single-item queue becomes empty after removal.")
+print("Now we will check to see if the queue is empty after removeing a person.")
 
 #creating a new queue object 
 newqueue = Queue()
 
 #adding a single value to the queue 
-newqueue.enqueue(10)
+newqueue.enqueue("john")
 
 #removing all values from the queue
 print(newqueue.queue)
