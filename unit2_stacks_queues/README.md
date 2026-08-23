@@ -31,6 +31,14 @@ After completing the programming assignment, add this reflection to your initial
 
 Your reflection should be approximately 150–200 words and address the following questions:
 
-1. What concepts or skills did you learn while completing this assignment?
-2. What challenges did you encounter, and how did you overcome them?
-3. Explain the differences between stacks and queues as this relates to real-world applications.
+**1. What concepts or skills did you learn while completing this assignment?**
+
+While completing this assignment I learned how to use and apply stacks and queues.
+
+**2. What challenges did you encounter, and how did you overcome them?**
+
+Honestly, this discussion project was quite straightforward. If you have finished your readings before attempting this project, I believe you shouldn't have much of a problem with it. Though I had some problems indexing, because I was trying to index from inside a formatted string. To fix this I just created an extra variable and assigned it the value at said index. Then I used that inside the formatted string.
+
+**3. Explain the differences between stacks and queues as this relates to real-world applications.**
+
+A stack in Python is like having a stack of plates—when you need a plate you take one from the top of the stack, and after using that same plate and cleaning it you will put it back on the top of the stack. This analogy shows the logic behind stacks in Python; Last In First Out (LIFO). On the other hand, queues work just like being in a line at the register. The first in line pays first and leaves the store first, then the second, third, and so on. This analogy is a good example of how queues work in Python; First In First Out (FIFO).
