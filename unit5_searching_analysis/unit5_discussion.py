@@ -94,6 +94,15 @@ def binary_search(lst, target):
     # if the value is not found return -1 
     return -1
 
+def realWorldSenerio():
+    # the real world senerio that i chosen is the gorcery item scanner 
+    # Becuase the codes that are scanned come in a unorderd list i cannot use a binery scann to find a particular item 
+    grocery_items_codes = [100,234,124,2334,324,324,563]
+    # insted i will use a linear search to find my times 
+    print("Im searching for milk with code 2334 ")
+
+    print(f"the milk was the {linear_search(grocery_items_codes+1)} item scanned")
+    
 
 
 def main():
